@@ -14,6 +14,7 @@ body {
 
 html{
   scroll-behavior: smooth;
+  scroll-padding-top: 200px;
 }
 
 ::-moz-selection {
@@ -6383,11 +6384,13 @@ textarea.form-control {
   transition: all 0.4s linear;
 }
 
+
 .service-item .service-item__title {
   position: relative;
-  font-size: 32px;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+    font-size:28px;
+    margin-bottom: 25px;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
 }
 
 .service-item .service-item__desc {
@@ -6416,12 +6419,9 @@ textarea.form-control {
 }
 
 .service-item .service-item__content {
-  padding: 0 21px 50px;
+  padding: 0 21px 8px;
 }
 
-.service-item  img {
-   /* height: 300px; */
-}
 
 .service-item:hover {
   -webkit-transform: translateY(-5px);
