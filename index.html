@@ -229,16 +229,26 @@
       <!-- ============================
         Video background
     ============================== -->
-      <section class="hero">
-        <video class="video" autoplay loop muted>
-          <source src="assets/video/hero-v.mp4" type="video/mp4" />
-        </video>
-      </section>
+    <div class="v-header container">
+      <div class="fullscreen-video-wrap">
+        <video src="assets/video/hero-v.mp4" autoplay="" loop="" muted></video>
+      </div>
+      <div class="video-overlay"></div>
+      <div class="video-content container text-center">
+        <h1>HAPPINESS STARTS FROM HOME</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
+          temporibus <br> perferendis necessitatibus numquam amet impedit explicabo?
+          
+        </p>
+        <a class="btn btn-primary btn-lg"  href="#overView" style="background: #0e2b5c;">Find Out More</a>
+      </div>
+    </div>
 
       <!-- ========================
       About Layout 2
     =========================== -->
-      <section class="about-layout2 pb-50">
+      <section class="about-layout2">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-6">
@@ -277,7 +287,8 @@
      <!-- ========================
             Over View
     ========================== -->
-      <div class="container-fluid mt-30 mb-50">
+    <div id="overView" class="mt--50"></div>
+      <div class="container-fluid mb-50">
         <div class="heading text-center mb-40"> 
           <h2 class="heading__title">The Real Estate you can trust</h2>
         </div><!-- /.heading -->
