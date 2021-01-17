@@ -2900,8 +2900,8 @@ textarea.form-control {
   position: absolute;
   right: 0;
   top: 0;
-  content: "\f067";
-  font-family: fontawesome;
+  content: "\f078";
+  font-family:  FontAwesome;
   background-color: transparent;
   color: #0e2b5c;
   font-size: 10px;
@@ -2934,8 +2934,12 @@ textarea.form-control {
 .accordion-item .accordion-item__body p {
   font-size: 15px;
   line-height: 24px;
-  margin-bottom: 0;
 }
+
+.accordion-item .accordion-item__body ul {
+  list-style-type: lower-roman;
+}
+
 
 /* Mobile Phones and tablets */
 @media (min-width: 320px) and (max-width: 767px) {
@@ -3519,8 +3523,7 @@ textarea.form-control {
   left:0;
   width:100vw;
   z-index:1;
-  background: rgba(0, 0, 0, 0.5);
-  /* opacity:0.50; */
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .video-content{
@@ -3530,7 +3533,6 @@ textarea.form-control {
 .video-content h1{
   font-size: 70px;
   font-weight: 600;
-  /* font-family: "playfair Display", serif; */
   color: #ffff;
 }
 
@@ -3542,6 +3544,9 @@ textarea.form-control {
 
 
 @media(max-width: 768px) {
+  .v-header{
+    margin-bottom: -10px;
+  }
   .video-content h1 {
     font-size: 2em;
   }
@@ -6364,6 +6369,25 @@ textarea.form-control {
   }
 }
 
+
+/*-----------------------
+    Our Way
+--------------------------*/
+.expression-item img {
+   height: 80px;
+   text-align: center;
+}
+
+.expression-item h3 {
+  font-size: 20px;
+  padding: 16px 0 0 0;
+}
+
+.expression-item p {
+  font-size: 15px;
+}
+
+
 /*-----------------------
     Services 
 --------------------------*/
@@ -6459,8 +6483,6 @@ textarea.form-control {
     font-size: 25px;
   } 
 }
-
-
 
 /*-------------------------
     single services page
