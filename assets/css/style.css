@@ -48,6 +48,17 @@ img {
   max-width: 100%;
 }
 
+.general-title {
+  font-size: 33px;
+}
+
+@media(max-width: 768px) {
+  .general-title {
+    padding-top: 40px;
+    font-size: 25px;
+  } 
+}
+
 /*-------------------------
      RESET Default Styles
  --------------------------*/
