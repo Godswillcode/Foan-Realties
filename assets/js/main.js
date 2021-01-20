@@ -39,18 +39,7 @@ $(function () {
         $('.navbar-collapse').toggleClass('menu-opened');
     })
 
-    /*==========   Sticky Navbar   ==========*/
-    $win.on('scroll', function () {
-        if ($win.width() >= 992) {
-            var $navbar = $('.sticky-navbar');
-            if ($win.scrollTop() > 200) {
-                $navbar.addClass('fixed-navbar');
-            } else {
-                $navbar.removeClass('fixed-navbar');
-            }
-        }
-    });
-
+ 
     /*==========   Scroll Top Button   ==========*/
     var $scrollTopBtn = $('#scrollTopBtn');
     // Show Scroll Top Button
@@ -126,16 +115,7 @@ $(function () {
         centerPadding: '15px'
     });
 
-    /*----------  slick Carousel with Filter  ----------*/
-    $('#slick-filter-buttons .nav__link').on('click', function (e) {
-        e.preventDefault();
-        $(this).addClass('active').siblings().removeClass('active');
-        var key = "." + $(this).data('value');
-
-        $('#filter-carousel').slick('slickUnfilter');
-        $('#filter-carousel').slick('slickFilter', key).slick('refresh');
-        $('#filter-carousel').slick('slickGoTo', 0);
-    });
+ 
 
     /*==========  Contact Form validation  ==========*/
     var contactForm = $("#contactForm"),
@@ -194,12 +174,7 @@ $(function () {
         }
     });
 
-    /*==========   counterUp  ==========*/
-    $(".counter").counterUp({
-        delay: 10,
-        time: 4000
-    });
-
+   
     /*==========  NiceSelect Plugin  ==========*/
     $('select').niceSelect();
 
