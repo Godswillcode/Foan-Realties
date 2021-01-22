@@ -3561,16 +3561,55 @@ textarea.form-control {
   letter-spacing: 0.7px;
 }
 
+/*------------------------
+    Picture background hero
+--------------------------*/
+#hero {
+  height: 100vh;
+  width: 100%;
+  animation: animate 10s ease-in-out infinite;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes animate {
+  0%,100% {
+    background-image: url('/assets/images/home/slider-1.jpg');
+  }
+  25% {
+      background-image: url('/assets/images/home/slider-2.jpg');
+    }
+  50% {
+      background-image: url('/assets/images/home/slider-3.jpg');
+    }
+}
+
+.outer {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#hero h1{
+  font-size: 70px;
+  font-weight: 600;
+  color: #ffff;
+}
+
+#hero p{
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
 
 @media(max-width: 768px) {
   .v-header{
     margin-bottom: -10px;
   }
-  .video-content h1 {
+  .video-content h1, #hero h1 {
     font-size: 2em;
   }
 }
- 
 
 /*-----------------------
     Features
