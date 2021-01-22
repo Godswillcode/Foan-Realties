@@ -295,32 +295,27 @@
               <div class="contact-panel__banner d-flex align-items-end mb-20">
                 <div class="bg-img"><img src="assets/images/contact/1.jpg" alt="banner"></div>
               </div><!-- /.contact-panel__banner -->
-              <form class="contact-panel__form" method="post" action="assets/php/contact.php" id="contactForm">
+              <form class="contact-panel__form" action="#">
                 <div class="row">
                   <div class="col-sm-12">
                     <h4 class="contact-panel__title">Get In Touch</h4>
                     <p class="contact-panel__desc mb-40">A realtor is more than a salesman, and a house is more than the sum of its drywall and vanilla accents.</p>
                   </div>
                   <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group"><input type="text" class="form-control" placeholder="Name" id="contact-name"
+                    <div class="form-group"><input type="text" class="form-control" placeholder="First Name" id="contact-FirstName"
                         name="contact-name" required></div>
                   </div><!-- /.col-lg-6 -->
                   <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group"><input type="text" class="form-control" placeholder="Last Name" id="contact-LastName"
+                      name="contact-name" required></div>
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="form-group"><input type="email" class="form-control" placeholder="Email"
-                        id="contact-email" name="contact-email" required></div>
+                      id="contact-email" name="contact-email" required></div>
                   </div><!-- /.col-lg-6 -->
                   <div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="form-group"><input type="text" class="form-control" placeholder="Phone"
-                        id="contact-Phone" name="contact-phone" required></div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group">
-                      <select class="form-control">
-                        <option value="0">Select Your Service</option>
-                        <option value="1">consulting</option>
-                        <option value="2">constructions</option>
-                      </select>
-                    </div>
+                      id="contact-Phone" name="contact-phone" required></div>
                   </div><!-- /.col-lg-6 -->
                   <div class="col-sm-12 col-md-12 col-lg-12">
                     <div class="form-group">
@@ -544,6 +539,14 @@
   <script src="assets/js/jquery-3.5.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/bootstrapValidation/bootstrap-validate.js"></script>
+
+    <!--==========  Inspection form validation   ==========-->
+    <script>
+      bootstrapValidate(['#contact-FirstName', '#contact-LastName'], 'alpha:Please Enter a valid Name')
+      bootstrapValidate('#contact-Phone', 'numeric:Please Enter a valid Number')
+      bootstrapValidate('#contact-email', 'email:Please Enter a valid Email')
+       </script>
 </body>
 
 </html>
