@@ -489,13 +489,12 @@
  
            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
             <div class="form-group">
-                <input type="date" id="date" placeholder="Date" class="form-control bg-white" required> 
+                <input placeholder="Date" class="form-control bg-white" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
             </div>     
            </div>
           </div>
-            <div class="form-grou">
               <textarea class="form-control bg-white" placeholder="Message" id="messgae" required></textarea>
-            </div>
+           
             <br>
             <div class="submit-btn-wrap">
               <button class="btn btn__primary shadow" type="submit">Submit form</button>
