@@ -441,10 +441,66 @@
         <h2>Coming Soon</h2>
     </div>
 
+    <div class="text-center p-4" id="laps" style="background: grey;">
+      <h4 class="service-item__title pb-20">Book Physical Inspection</h4>
 
-    <div class="service-item text-center" id="laps">
-      <h4 class="service-item__title">Virtual Inspection</h4>
-        
+         <form action="#">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                <div class="form-group">
+                  <input type="text" placeholder="First Name" id="FirstName" class="form-control bg-white"  required>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="form-group">
+                <input type="text" placeholder="Last Name" id="LastName" class="form-control bg-white" required>
+              </div>  
+          </div>
+ 
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                 <div class="form-group">
+                  <input type="tel" placeholder="Phone" id="phone" class="form-control bg-white" required>
+                 </div> 
+           </div>
+
+           <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="form-group">
+              <input type="email" placeholder="Email" id="email" class="form-control bg-white" required>
+            </div>    
+           </div>
+ 
+           <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="form-group">
+              <select class="form-control bg-white">
+                  <option>Please select category</option> 
+                <option value="realtor">Realtor</option>
+                <option value="client">Client</option>
+                <option value="other">Other</option>
+              </select>
+            </div>  
+           </div>
+ 
+           <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="form-group">
+              <input type="text" placeholder="Estate" id="estate" class="form-control bg-white" required>
+            </div>    
+           </div>
+ 
+           <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+            <div class="form-group">
+                <input type="date" id="date" placeholder="Date" class="form-control bg-white" required> 
+            </div>     
+           </div>
+          </div>
+            <div class="form-grou">
+              <textarea class="form-control bg-white" placeholder="Message" id="messgae" required></textarea>
+            </div>
+            <br>
+            <div class="submit-btn-wrap">
+              <button class="btn btn__primary shadow" type="submit">Submit form</button>
+            </div>
+         </form>
     </div>
     
       </div><!-- /.container -->
@@ -570,6 +626,13 @@
   <script src="assets/js/jquery-3.5.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/bootstrapValidation/bootstrap-validate.js"></script>
+  <!--==========  Inspection form validation   ==========-->
+  <script>
+ bootstrapValidate(['#FirstName', '#LastName'], 'alpha:Please Enter a valid Name')
+ bootstrapValidate('#phone', 'numeric:Please Enter a valid Number')
+ bootstrapValidate('#email', 'email:Please Enter a valid Email')
+ bootstrapValidate('#estate', 'alphanum:Please Enter correct Estate')
+  </script>
 </body>
-
 </html>

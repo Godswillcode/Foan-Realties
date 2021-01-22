@@ -197,3 +197,6 @@ $(function () {
  /*==========   Footer copy right year  ==========*/
  const footerYear = new Date().getFullYear()
  document.getElementById('year').innerHTML = footerYear
+
+
+ 
