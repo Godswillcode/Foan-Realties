@@ -823,7 +823,9 @@ select {
 .bg-white {
   background-color: #ffffff !important;
 }
-
+.bg-form {
+  background-color: #ccc;
+}
 .bg-gray {
   background-color: #f9f9f9 !important;
 }
@@ -1536,6 +1538,7 @@ label.error {
   border-radius: 1px;
   padding: 0 0 0 20px;
   border-radius: 3px;
+  font-size: 18px;
 }
 
 .form-control:focus {
